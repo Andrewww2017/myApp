@@ -1,0 +1,39 @@
+.header{
+    width: 100wv;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.headerBlock{
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.videoCourse{
+    color: white;
+    width: 300px;
+}
+.videoCourse span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.log{
+    display: flex;
+}
+.logButton button{
+    width: 120px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+.logButton button:hover{
+    cursor: pointer;
+}
+.logButton span{
+    margin-left: 5px;
+}

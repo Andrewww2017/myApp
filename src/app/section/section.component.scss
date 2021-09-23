@@ -1,0 +1,30 @@
+.main {
+    width: 100wv;
+    height: 90vh;
+    background-color: rgb(224, 216, 216);
+}
+.search {
+    width: 75%;
+    height: 10%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.addCourseBtn {
+    width: 75%;
+    height: 7%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.loadMore{
+    width: 75%;
+    height: 7%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

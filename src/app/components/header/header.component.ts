@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faUserAlt,faSignInAlt,faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-header',
@@ -6,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  faUserAlt=faUserAlt;
+  faSignInAlt=faSignInAlt;
+  faPlayCircle=faPlayCircle;
+
 
   constructor() { }
 
@@ -13,3 +19,4 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+// <i class="fa-regular fa-trash-can"></i>
