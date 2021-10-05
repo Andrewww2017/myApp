@@ -1,15 +1,11 @@
-<div class="listInfo">
+<div class="listInfo" *ngFor="let course of arrCourses">
+
     <div class="listHeader">
-        <div class="title">
-            <h3>Video course 1. Name tag.</h3>
-        </div>
+        <div class="title"><h3>{{course.courseTitle}}</h3></div>
+        <div class="date"><span>{{course.date |  date:'MMM d, y'}}</span></div>
     </div>
     <div class="courseInfo">
-        <div class="listText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo, recusandae voluptates nemo quia
-            fugit blanditiis aliquam. Ut consequuntur voluptatem odio eaque tempore repudiandae natus vero. Debitis
-            harum sit quae!
-        </div>
+        <div class="listText"><span>{{course.courseText}}</span></div>
         <div class="listButtons">
             <button type="button" class="btn btnColor"><fa-icon [icon]="faPenAlt"></fa-icon>  Edit</button>
             <button type="button" class="btn btnColor"><fa-icon [icon]="faTrashAlt"></fa-icon>  Delete</button>
@@ -17,40 +13,5 @@
     </div>
 </div>
 
-<div class="listInfo">
-    <div class="listHeader">
-        <div class="title">
-            <h3>Video course 1. Name tag.</h3>
-        </div>
-    </div>
-    <div class="courseInfo">
-        <div class="listText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo, recusandae voluptates nemo quia
-            fugit blanditiis aliquam. Ut consequuntur voluptatem odio eaque tempore repudiandae natus vero. Debitis
-            harum sit quae!
-        </div>
-        <div class="listButtons">
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faPenAlt"></fa-icon>  Edit</button>
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faTrashAlt"></fa-icon>  Delete</button>
-        </div>
-    </div>
-</div>
 
-<div class="listInfo">
-    <div class="listHeader">
-        <div class="title">
-            <h3>Video course 1. Name tag.</h3>
-        </div>
-    </div>
-    <div class="courseInfo">
-        <div class="listText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo, recusandae voluptates nemo quia
-            fugit blanditiis aliquam. Ut consequuntur voluptatem odio eaque tempore repudiandae natus vero. Debitis
-            harum sit quae!
-        </div>
-        <div class="listButtons">
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faPenAlt"></fa-icon>  Edit</button>
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faTrashAlt"></fa-icon>  Delete</button>
-        </div>
-    </div>
-</div>
+

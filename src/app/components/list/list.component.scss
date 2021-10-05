@@ -6,6 +6,12 @@
     padding:10px 20px;
     margin: 0 auto 10px;
 }
+.listHeader{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
 .courseInfo{
     width: 100%;
     height: 100%;
@@ -28,4 +34,3 @@
 
 
 
-// ng add @fortawesome/angular-fontawesome@<0.9.x>
