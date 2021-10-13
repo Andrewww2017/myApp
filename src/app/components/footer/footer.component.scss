@@ -4,9 +4,8 @@
     background-color: black;
     display: flex;
     justify-content: end;
-    // justify-content: end;
 }
-.footer span{
+.footer :nth-child(1){
     color: white;
     margin-right: 20px;
 }

@@ -1,4 +1,4 @@
-.listInfo{
+.list-info{
     width: 75%;
     min-height: 100px;
     background-color: white;
@@ -6,26 +6,36 @@
     padding:10px 20px;
     margin: 0 auto 10px;
 }
-.courseInfo{
+.list-header{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.course-info{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
-.listText{
+.list-text{
     width: 70%;
     height: 100%;
 }
-.listButtons{
+.list-buttons{
     width: 20%;
     height: 100%;
 }
-.btnColor{
+.list-buttons button{
+    width: 85px;
+}
+.btn-color{
     background-color: rgb(3, 130, 248);
     color:white;
     margin: 10px;
 }
-
-
-
-// ng add @fortawesome/angular-fontawesome@<0.9.x>

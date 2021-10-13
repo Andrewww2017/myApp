@@ -16,7 +16,7 @@
     color: white;
     width: 300px;
 }
-.videoCourse span{
+.videoCourse :nth-child(2){
     margin-left: 10px;
     font-weight: bold;
 }
@@ -24,16 +24,16 @@
 .log{
     display: flex;
 }
-.logButton button{
+.logButton :nth-child(1){
     width: 120px;
     background-color: black;
     color: white;
     border: none;
     outline: none;
 }
-.logButton button:hover{
+.logButton :nth-child(1):hover{
     cursor: pointer;
 }
-.logButton span{
+.logButton :nth-child(2){
     margin-left: 5px;
 }

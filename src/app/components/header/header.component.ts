@@ -8,9 +8,9 @@ import { faUserAlt,faSignInAlt,faPlayCircle } from '@fortawesome/free-solid-svg-
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  faUserAlt=faUserAlt;
-  faSignInAlt=faSignInAlt;
-  faPlayCircle=faPlayCircle;
+  public faUserAlt=faUserAlt;
+  public faSignInAlt=faSignInAlt;
+  public faPlayCircle=faPlayCircle;
 
 
   constructor() { }
@@ -19,4 +19,3 @@ export class HeaderComponent implements OnInit {
   }
 
 }
-// <i class="fa-regular fa-trash-can"></i>

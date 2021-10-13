@@ -1,56 +1,24 @@
-<div class="listInfo">
-    <div class="listHeader">
+<div class="list-info" *ngFor="let course of arrCourses">
+    <div class="list-header">
         <div class="title">
-            <h3>Video course 1. Name tag.</h3>
+            <h3>{{course.courseTitle  | uppercase }}</h3>
+        </div>
+        <div class="time">
+            <div class="date"><fa-icon [icon]="faClock"></fa-icon><span>{{course.date}}</span></div>
+            <div class="duration"><fa-icon [icon]="faCalendarAlt"></fa-icon><span>{{course.duration}}</span></div>
         </div>
     </div>
-    <div class="courseInfo">
-        <div class="listText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo, recusandae voluptates nemo quia
-            fugit blanditiis aliquam. Ut consequuntur voluptatem odio eaque tempore repudiandae natus vero. Debitis
-            harum sit quae!
+    <div class="course-info">
+        <div class="list-text">
+            <span>{{course.courseText}}</span>
         </div>
-        <div class="listButtons">
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faPenAlt"></fa-icon>  Edit</button>
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faTrashAlt"></fa-icon>  Delete</button>
-        </div>
-    </div>
-</div>
-
-<div class="listInfo">
-    <div class="listHeader">
-        <div class="title">
-            <h3>Video course 1. Name tag.</h3>
-        </div>
-    </div>
-    <div class="courseInfo">
-        <div class="listText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo, recusandae voluptates nemo quia
-            fugit blanditiis aliquam. Ut consequuntur voluptatem odio eaque tempore repudiandae natus vero. Debitis
-            harum sit quae!
-        </div>
-        <div class="listButtons">
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faPenAlt"></fa-icon>  Edit</button>
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faTrashAlt"></fa-icon>  Delete</button>
-        </div>
-    </div>
-</div>
-
-<div class="listInfo">
-    <div class="listHeader">
-        <div class="title">
-            <h3>Video course 1. Name tag.</h3>
-        </div>
-    </div>
-    <div class="courseInfo">
-        <div class="listText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo, recusandae voluptates nemo quia
-            fugit blanditiis aliquam. Ut consequuntur voluptatem odio eaque tempore repudiandae natus vero. Debitis
-            harum sit quae!
-        </div>
-        <div class="listButtons">
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faPenAlt"></fa-icon>  Edit</button>
-            <button type="button" class="btn btnColor"><fa-icon [icon]="faTrashAlt"></fa-icon>  Delete</button>
+        <div class="list-buttons">
+            <button type="button" class="btn btn-color" (click)="editCourse()">
+                <fa-icon [icon]="faPenAlt"></fa-icon> Edit
+            </button>
+            <button type="button" class="btn btn-color" (click)="deleteCourse()">
+                <fa-icon [icon]="faTrashAlt"></fa-icon> Delete
+            </button>
         </div>
     </div>
 </div>
